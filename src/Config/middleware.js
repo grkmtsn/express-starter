@@ -5,6 +5,6 @@ module.exports = {
      * Middlewares needs class to initiate them in Middlewares folder with exact same name.
      */
     middlewares : [
-        'Logger', 'BodyParser', 'Helmet', 'Session'
+        'Logger', 'BodyParser', 'Helmet', 'Session', 'Compression'
     ]
 }

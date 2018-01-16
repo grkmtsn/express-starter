@@ -1,10 +1,10 @@
 const {Controller, Get} = require('@decorators/express')
 
-@Controller('/base')
+@Controller('/')
 class AuthController {
-    @Get('/asd')
+    @Get('/')
     index(req,res) {
-        res.send('Hello World')
+        res.render('pages/homepage',{title: 'Homepage', content: 'EXPRESS STARTER KIT'})
     }
 }
 module.exports = AuthController

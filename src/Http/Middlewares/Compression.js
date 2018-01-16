@@ -1,4 +1,4 @@
-const Express = require('../Express')
+const Express = require('../../Bootstrap/Express')
 const compression = require('compression')
 
 module.exports = () => {

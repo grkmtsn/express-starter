@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Express Starter Boilerplate",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon --exec babel-node app.js"
+    "dev": "cross-env NODE_ENV=development nodemon --exec babel-node app.js",
+    "build": "cross-env NODE_ENV=production babel-node app.js"
   },
   "author": "",
   "license": "ISC",
+  "main": "app.js",
   "dependencies": {
     "axios": "^0.17.1",
     "body-parser": "^1.18.2",
@@ -14,10 +16,13 @@
     "connect-redis": "^3.3.3",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
+    "express-session": "^1.15.6",
     "helmet": "^3.9.0",
     "morgan": "^1.9.0",
     "mysql2": "^1.5.1",
+    "pug": "^2.0.0-rc.4",
     "sequelize": "^4.31.2",
+    "sequelize-slugify": "^0.5.0",
     "session-file-store": "^1.2.0"
   },
   "devDependencies": {
@@ -25,9 +30,11 @@
     "@babel/node": "^7.0.0-beta.37",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.37",
     "@babel/plugin-proposal-decorators": "^7.0.0-beta.37",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.37",
     "@babel/polyfill": "^7.0.0-beta.37",
     "@babel/preset-env": "^7.0.0-beta.37",
     "@babel/preset-stage-0": "^7.0.0-beta.37",
-    "@decorators/express": "^2.2.1"
+    "@decorators/express": "^2.2.1",
+    "cross-env": "^5.1.3"
   }
 }
