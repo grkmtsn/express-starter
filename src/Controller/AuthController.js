@@ -4,7 +4,7 @@ const {Controller, Get} = require('@decorators/express')
 class AuthController {
     @Get('/asd')
     index(req,res) {
-        res.send('Hello World');
+        res.send('Hello World')
     }
 }
 module.exports = AuthController
